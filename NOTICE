@@ -1,0 +1,22 @@
+SPARC-RAG
+Copyright 2026 The SPARC-RAG Authors
+
+This repository is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+The retrieval-augmented inference framework in this repository (in particular
+predict.py, evaluate.py, lib.py, inference/, models/, llm_server/, metrics/,
+retriever_server/, processing_scripts/ and download/) is derived from the
+following projects, both licensed under the Apache License, Version 2.0, and has
+been substantially modified by the SPARC-RAG authors:
+
+  IRCoT: Interleaving Retrieval with Chain-of-Thought Reasoning
+  https://github.com/StonyBrookNLP/ircot
+
+  Adaptive-RAG: Learning to Adapt Retrieval-Augmented Large Language Models
+  through Question Complexity
+  https://github.com/starsuzi/Adaptive-RAG
+
+metrics/drop_eval.py is adapted from the DROP evaluation script of AllenNLP
+(https://github.com/allenai/allennlp) and metrics/support_em_f1.py from the
+evaluation script of HotpotQA (https://github.com/hotpotqa/hotpot); both projects
+are licensed under the Apache License, Version 2.0.

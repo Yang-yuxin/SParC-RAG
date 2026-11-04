@@ -1,0 +1,24 @@
+Your task is to judge from the materials given whether the candidate answer deserves to be accepted.
+
+## Information
+- Question: {query}
+- Context: {context}
+- Candidate Answer: {answer}
+
+## Criteria
+1. The answer must be succinct, factual, and fully supported by both the retrieved sources and the reasoning steps.  
+2. The answer should directly fulfill the intent of the question by fully addressing the question.
+3. **Reject** any answer that  
+- omits key facts,  
+- introduces unsupported claims,  
+- contains irrelevant content, **or**  
+- includes or is reduced to phrases like **“insufficient information,” “unknown,” “unable to judge,” “not enough data,”** etc.
+
+
+## Response Format  
+Respond in exactly three lines, nothing else:  
+Line 1 — `yes` or `no` (lower-case).  
+Line 2 — The reason for the decision.  
+Line 3 — The literal string `[END]`.
+
+Your response:

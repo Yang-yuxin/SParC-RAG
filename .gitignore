@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Environments
+.env
+.venv/
+venv/
+
+# Datasets, corpora and indices (downloaded or built locally)
+raw_data/
+processed_data/
+faiss-index/
+elasticsearch-*/
+.temp/
+
+# Training data, checkpoints and merged models
+training/data/
+training/checkpoints/
+training/models/
+
+# Run outputs and logs
+predictions/
+runs/
+*.log
+
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store

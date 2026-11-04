@@ -1,0 +1,16 @@
+Based on the provided document content and reasoning, answer the question by step-by-step reasoning:
+- Identify and extract relevant information from the documents that supports answering the query.
+- Construct a logical chain of reasoning that connects the extracted evidence to the query, advancing toward a complete answer.
+
+
+Context:
+- Question to be answered: {query}
+- Retrieved Document content: {refs}
+- Reasoning history: {history}
+
+
+Guidelines:
+- Generate step-by-step reasoning first. Then, provide a direct, concise, and accurate answer inside <answer> </answer> tags. If you can answer with only a few words, do not use the whole sentence.
+- End your response with the literal tag [END].
+
+Output:

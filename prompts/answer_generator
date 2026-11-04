@@ -1,0 +1,11 @@
+Answer the question based on the given notes. 
+Output ONLY the exact answer in as few words as possible. 
+Do not include the question, reasoning, or any extra text. 
+End your response with the literal tag [END].
+
+
+The following are given notes: 
+{note}
+
+Question: {query}
+Answer:

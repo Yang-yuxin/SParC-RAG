@@ -1,0 +1,36 @@
+# SPARC-RAG dependencies, pinned to the environment this code was tested in
+# (Python 3.11, Linux x86-64, CUDA 12.x). Install the PyTorch wheel matching your CUDA version first, e.g.
+#   pip install torch==2.7.1 --index-url https://download.pytorch.org/whl/cu128
+
+# --- Inference, evaluation and the LLM server ---------------------------------------------
+torch==2.7.1
+transformers==4.57.1
+vllm==0.10.1.1                # llm_server/serve.py only
+fastapi==0.116.1
+uvicorn[standard]==0.35.0
+requests==2.32.5
+jsonnet==0.21.0
+numpy==1.26.4
+scipy==1.16.1
+tqdm==4.67.1
+ftfy==6.3.1
+RapidFuzz==3.13.0
+tiktoken==0.11.0              # count_tokens.py
+
+# --- Retrieval servers and data preparation -----------------------------------------------
+elasticsearch==7.9.1          # client for the Elasticsearch 7.10.2 server
+beir==2.2.0
+sentence-transformers==5.1.0
+faiss-cpu==1.12.0
+datasets==4.0.0
+base58==2.1.1
+dill==0.3.8
+gdown==5.2.0                  # download/raw_data.sh
+
+# --- DPO training (training/) ---------------------------------------------------------------
+trl==0.24.0                   # also tested with trl 0.23.1
+peft==0.17.1
+deepspeed==0.18.0
+accelerate==1.10.0
+tensorboard==2.20.0           # default --report_to of training/train_dpo_asymmetric.py
+openai==1.101.0               # optional: only for --judge_model gpt-4o in training/gen_dpo_data_answer_eval.py
